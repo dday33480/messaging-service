@@ -1,47 +1,7 @@
-<div class="main-banner">
-  <h1>
-    {{title}}
-  </h1>
-</div>
-<div class="container">
-  <div id="user-nav-bar">
-    <h2>
-      Active Users:
-    </h2>
-    <div id="user-list" *ngFor="let user of activeUsers">
-      <p>
-        <a href="">{{user.user}}</a>
-      </p>
-    </div>
-  </div>
-  <div id="latest-messages">
-    <h2>
-      Latest Messages
-    </h2>
-    <div id="message-details" *ngFor="let message of userMessages">
-      <p>
-      <strong>{{message.user}}</strong> - {{message.date | date: "dd MMMM yyyy @ HH:mm"}}
-      </p>
-        <textarea>
-          {{message.message}}
-        </textarea>
-    </div>
-  </div>
-  <div id="new-message">
-    <h2>
-      New Message
-    </h2>
-    <div id="input-fields">
-      <div>
-        <label for="from">From:</label>
-        <br/>
-        <input type="text" name="from" id="from-input" required="true">
-      </div>
-      <div>
-        <label for="message">Message:</label>
-        <br/>
-        <input type="text" name="message" id="message-input" required="true">
-      </div>
-    </div>
-  </div>
-</div>
+<app-header [appName]="title"></app-header>
+
+
+<app-display></app-display>
+
+
+<app-footer [appName]="title"></app-footer>

@@ -1,0 +1,70 @@
+.container {
+    display: grid;
+    grid-template-columns: 164px 100%;
+    gap: 5px;
+}
+
+#user-nav-bar {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    max-width: 164px;
+    border: 2px solid black;
+}
+
+#user-list {
+    text-align: center;
+}
+
+#latest-messages {
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: 2px solid black;
+    width: 100%;
+}
+
+#latest-messages>h2 {
+    text-align: center;
+}
+
+#message-details>p {
+    margin-left: 25px;
+}
+
+textarea {
+    resize: none;
+    width: 50%;
+    height: 80px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    align-content: start;
+}
+
+#new-message {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#input-fields {
+    text-align: left;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+#from-input {
+    width: 500px;
+    margin-bottom: 8px;
+}
+
+#message-input {
+    width: 500px;
+    height: 150px;
+}
