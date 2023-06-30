@@ -13,30 +13,13 @@
       <h2>
         Latest Messages
       </h2>
-      <div id="message-details" *ngFor="let message of userMessages">
+      <div id="message-details" *ngFor="let message of messages">
         <p>
-        <strong>{{message.user}}</strong> - {{message.date | date: "dd MMMM yyyy @ HH:mm"}}
+        <strong>{{userName}}</strong> - {{messageDate | date: "dd MMMM yyyy @ HH:mm"}}
         </p>
           <textarea>
-            {{message.message}}
+            {{messages}}
           </textarea>
-      </div>
-    </div>
-    <div id="new-message">
-      <h2>
-        New Message
-      </h2>
-      <div id="input-fields">
-        <div>
-          <label for="from">From:</label>
-          <br/>
-          <input type="text" name="from" id="from-input" required="true">
-        </div>
-        <div>
-          <label for="message">Message:</label>
-          <br/>
-          <input type="text" name="message" id="message-input" required="true">
-        </div>
       </div>
     </div>
   </div>

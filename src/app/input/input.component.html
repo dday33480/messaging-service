@@ -1,1 +1,18 @@
-<p>input works!</p>
+<div id="new-message">
+    <h2>
+      New Message
+    </h2>
+    <form id="input-fields">
+      <div>
+        <label for="from">From:</label>
+        <br/>
+        <input type="text" name="from" id="from-input" required="true" [(ngModel)]="userName">
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <br/>
+        <input type="text" name="message" id="message-input" required="true" [(ngModel)]="message">
+      </div>
+      <button (click)="onSend()">Send</button>
+    </form>
+  </div>
